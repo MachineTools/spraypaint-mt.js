@@ -736,6 +736,7 @@ export class SpraypaintBase {
     cloned.isMarkedForDisassociation = this.isMarkedForDisassociation
     cloned.errors = Object.assign({}, this.errors)
     cloned.links = Object.assign({}, this.links)
+    cloned._originalAttributes = cloneDeep(this._originalAttributes)
     return cloned
   }
 
